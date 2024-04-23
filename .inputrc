@@ -3,6 +3,10 @@ set show-mode-in-prompt on
 set vi-ins-mode-string \1\e[6 q\2
 set vi-cmd-mode-string \1\e[2 q\2
 
+# Reduce time Readline waits for additional input when a key is pressed.
+# Removes delay when switching vi modes in bash
+set keyseq-timeout 50
+
 # optionally:
 # switch to block cursor before executing a command
 set keymap vi-insert
