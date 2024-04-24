@@ -16,8 +16,9 @@ source $HOME/antigen.zsh
 # Load the oh-my-zsh's library
 antigen use oh-my-zsh
 
-# Syntax highlighting bundle.
+### zsh Plugins ###
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle jeffreytse/zsh-vi-mode
 
 antigen theme romkatv/powerlevel10k
 
