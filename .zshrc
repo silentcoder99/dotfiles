@@ -33,6 +33,11 @@ alias ga="git add"
 alias gc="git commit"
 alias gg="git log --graph --oneline"
 
+# Set default editor to vim
+export VISUAL=vim
+export EDITOR="$VISUAL"
+export GIT_EDITOR=vim
+
 #Minikube
 alias kubectl="minikube kubectl --"
 
