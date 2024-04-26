@@ -5,6 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+#Remove padding between right prompt and screen
+ZLE_RPROMPT_INDENT=0
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
